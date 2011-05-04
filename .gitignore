@@ -1,0 +1,14 @@
+# 全ファイル無視
+/*
+
+# dotファイル無視
+/.*
+
+# 無視しないファイル
+!/.bashrc
+!/.bash_profile
+!/.vimrc
+!/.screenrc
+!/.vim
+!/.gitignore
+

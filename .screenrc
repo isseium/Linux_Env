@@ -1,0 +1,10 @@
+# prefix
+escape ^Tt
+
+# General
+hardstatus on
+hardstatus alwayslastline "%-w%{= ck}%n %t%{-}%+w"
+
+# scroll screen with mouse scroll button
+termcapinfo xterm* ti@:te@
+
