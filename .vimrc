@@ -1,6 +1,7 @@
+" Initialize
 set nocompatible
 
-" code
+" encode
 set encoding=utf-8
 
 " Search
@@ -8,12 +9,16 @@ set ignorecase
 set smartcase
 set wrapscan
 set incsearch
-syntax off
+
+" Syntax
+syntax on
+colorscheme Green
 
 
 " Display
 set number
 set ruler
+set cmdheight=1
 set tabstop=4
 set shiftwidth=4
 

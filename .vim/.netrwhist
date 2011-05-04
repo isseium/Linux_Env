@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/home/issei/.vim_backup'
 let g:netrw_dirhist_2='/var/lib/redmine/lib'
 let g:netrw_dirhist_3='/var/lib/redmine'
@@ -8,3 +8,4 @@ let g:netrw_dirhist_5='/home/issei/public_html'
 let g:netrw_dirhist_6='/home/issei/public_html/errdocs'
 let g:netrw_dirhist_7='/home/issei/.ssh'
 let g:netrw_dirhist_8='/home/issei/prac/lithium-0.9.9/app/views/sample'
+let g:netrw_dirhist_9='/home/issei/.vim'

@@ -13,3 +13,6 @@ alias vi=vim
 # export TERM=xterm-256color
 
 alias zf=/var/lib/ZendFramework/bin/zf.sh
+
+# ls 
+alias ls="ls --color -F"
