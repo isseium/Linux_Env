@@ -1,0 +1,24 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# User specific aliases and functions
+alias vi=vim
+
+# TERM
+# export TERM=xterm
+# export TERM=xterm-256color
+
+# Aliases
+alias zf=/var/lib/ZendFramework/bin/zf.sh
+alias ll="ls -l"
+
+# ls 
+alias ls="ls -F"
+alias rm="rm -f"
+
+# PROMPT
+PS1='[\u@\h \w] \$ '
