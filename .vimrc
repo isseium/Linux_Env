@@ -21,7 +21,7 @@ set ruler
 set cmdheight=1
 set tabstop=4
 set shiftwidth=4
-
+set list
 
 " Edit
 set smartindent
@@ -29,11 +29,11 @@ set smartindent
 " set list
 set showmatch
 
-set noexpandtab
+set expandtab
 
 " Backup
 set backup
-set backupdir=~/.vim_backup
+set backupdir=~/.vim/backup
 
 
 if has("autocmd")

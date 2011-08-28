@@ -1,4 +1,9 @@
-# .bashrc
+# .bashrc_mac
+# .bashrc for Mac
+
+# Setting
+# $ cd ~/
+# $ ln -s /path/to/.bashrc_mac .
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
@@ -15,6 +20,9 @@ alias vi=vim
 # Aliases
 alias zf=/var/lib/ZendFramework/bin/zf.sh
 alias ll="ls -l"
+alias tmux="tmux -2"
+alias mysql="mysql5"
+alias mysqlctl="sudo /opt/local/share/mysql5/mysql/mysql.server"
 
 # ls 
 alias ls="ls -F"
@@ -22,3 +30,17 @@ alias rm="rm -f"
 
 # PROMPT
 PS1='[\u@\h \w] \$ '
+
+# PATH
+export PATH=$PATH:/opt/local/bin:/opt/local/sbin
+export MANPATH=/opt/local/man:$MANPATH
+
+####################################################################################################
+# Android 
+####################################################################################################
+export PATH=$PATH:/Users/issei/Library/android-sdk-mac_x86/platform-tools
+
+####################################################################################################
+# rails
+####################################################################################################
+export RAILS_ENV=development

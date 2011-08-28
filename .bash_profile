@@ -11,7 +11,7 @@ PATH=$PATH:$HOME/bin
 
 export PATH
 
-if [ $TERM != "screen" ]; then
-	screen -D -R -U
-fi
+#if [ $TERM != "screen" ]; then
+#	screen -D -R -U
+#fi
 
