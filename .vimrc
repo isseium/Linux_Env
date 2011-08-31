@@ -12,8 +12,9 @@ set incsearch
 
 " Syntax
 syntax on
-colorscheme Green
+" colorscheme Green
 
+colorscheme IPU_Air_Green
 
 " Display
 set number
