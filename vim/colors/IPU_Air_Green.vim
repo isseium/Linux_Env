@@ -1,6 +1,8 @@
-" ap_dark8.vim for Terminal.app (ANSI COLOR)
-" http://apribase.net/
+" IPU_Air_Green.vim
+" @isseium
 
+" based on ap_dark8 for Terminal.app (ANSI COLOR)
+" http://apribase.net/
 
 " based on ir_black color scheme
 " More at: http://blog.infinitered.com/entries/show/8
@@ -8,13 +10,11 @@
 " based on inkpot16 for mlterm
 " More at: http://d.hatena.ne.jp/y_yanbe/20070904/1188911217
 
-
 " Visor
 " http://visor.binaryage.com/
 
 " TerminalColoreopard
 " http://niw.at/articles/2007/11/02/TerminalColoreopard/ja
-
 
 " ********************************************************************************
 " The following are the preferred 16 colors for your terminal
@@ -44,20 +44,20 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let colors_name = "ap_dark8"
+let colors_name = "IPU_Air_Green"
 
 
 "hi Example         ctermfg=NONE        ctermbg=NONE        cterm=NONE
 
 " General colors
-hi Normal           ctermfg=NONE        ctermbg=NONE        cterm=NONE
-hi NonText          ctermfg=black       ctermbg=NONE        cterm=NONE
+hi Normal           ctermfg=white       ctermbg=NONE        cterm=NONE
+hi NonText          ctermfg=darkblue    ctermbg=NONE        cterm=NONE
 
-hi Cursor           ctermfg=black       ctermbg=gray        cterm=reverse
-hi LineNr           ctermfg=darkblue    ctermbg=black       cterm=NONE
+hi Cursor           ctermfg=white       ctermbg=yellow      cterm=reverse
+hi LineNr           ctermfg=yellow      ctermbg=NONE        cterm=bold
 
-hi VertSplit        ctermfg=black       ctermbg=black       cterm=NONE
-hi StatusLine       ctermfg=black       ctermbg=darkcyan    cterm=NONE
+hi VertSplit        ctermfg=gray       ctermbg=black       cterm=NONE
+hi StatusLine       ctermfg=gray       ctermbg=darkcyan    cterm=NONE
 hi StatusLineNC     ctermfg=gray        ctermbg=black       cterm=NONE  
 
 hi Folded           ctermfg=NONE        ctermbg=NONE        cterm=NONE
@@ -70,9 +70,9 @@ hi WildMenu         ctermfg=black       ctermbg=brown       cterm=NONE
 hi PmenuSbar        ctermfg=black       ctermbg=gray        cterm=NONE
 "hi Ignore          ctermfg=NONE        ctermbg=NONE        cterm=NONE
 
-hi Error            ctermfg=black       ctermbg=darkred     cterm=NONE
-hi ErrorMsg         ctermfg=black       ctermbg=darkred     cterm=NONE
-hi WarningMsg       ctermfg=black       ctermbg=darkred     cterm=NONE
+hi Error            ctermfg=gray       ctermbg=darkred     cterm=NONE
+hi ErrorMsg         ctermfg=gray       ctermbg=darkred     cterm=NONE
+hi WarningMsg       ctermfg=gray       ctermbg=darkred     cterm=NONE
 
 " Message displayed in lower left, such as --INSERT--
 hi ModeMsg          ctermfg=black       ctermbg=darkcyan    cterm=NONE
@@ -83,25 +83,25 @@ if version >= 700 " Vim 7.x specific colors
   hi MatchParen     ctermfg=gray        ctermbg=black       cterm=NONE
   hi Pmenu          ctermfg=NONE        ctermbg=black       cterm=NONE
   hi PmenuSel       ctermfg=NONE        ctermbg=darkgreen   cterm=NONE
-  hi Search         ctermfg=NONE        ctermbg=NONE        cterm=underline
+  hi Search         ctermfg=red      ctermbg=yellow     cterm=underline
 endif
 
 " Syntax highlighting
-hi Comment          ctermfg=brown       ctermbg=NONE        cterm=NONE
+hi Comment          ctermfg=darkyellow       ctermbg=NONE        cterm=NONE
 hi String           ctermfg=darkgreen   ctermbg=NONE        cterm=NONE
 hi Number           ctermfg=darkmagenta ctermbg=NONE        cterm=NONE
 
-hi Keyword          ctermfg=darkblue    ctermbg=NONE        cterm=NONE
-hi PreProc          ctermfg=darkblue    ctermbg=NONE        cterm=NONE
-hi Conditional      ctermfg=darkblue    ctermbg=NONE        cterm=NONE  " if else end
-
-hi Todo             ctermfg=darkred     ctermbg=NONE        cterm=NONE
+hi Keyword          ctermfg=cyan        ctermbg=NONE        cterm=NONE
+hi PreProc          ctermfg=darkcyan    ctermbg=NONE        cterm=NONE
+hi Conditional      ctermfg=cyan        ctermbg=NONE        cterm=NONE  " if else end
+"TODO
+hi Todo             ctermfg=black       ctermbg=lightyellow      cterm=NONE
 hi Constant         ctermfg=darkcyan    ctermbg=NONE        cterm=NONE
 
 hi Identifier       ctermfg=darkcyan    ctermbg=NONE        cterm=NONE
-hi Function         ctermfg=brown       ctermbg=NONE        cterm=NONE
-hi Type             ctermfg=brown       ctermbg=NONE        cterm=NONE
-hi Statement        ctermfg=darkblue    ctermbg=NONE        cterm=NONE
+hi Function         ctermfg=NONE        ctermbg=NONE        cterm=NONE
+hi Type             ctermfg=NONE        ctermbg=NONE        cterm=NONE
+hi Statement        ctermfg=darkcyan    ctermbg=NONE        cterm=NONE
 
 hi Special          ctermfg=gray        ctermbg=NONE        cterm=NONE
 hi Delimiter        ctermfg=darkcyan    ctermbg=NONE        cterm=NONE
@@ -126,35 +126,35 @@ hi link SpecialComment  Special
 hi link Debug           Special
 
 
-" Special for Ruby
-hi rubyRegexp                  ctermfg=brown          ctermbg=NONE      cterm=NONE
-hi rubyRegexpDelimiter         ctermfg=brown          ctermbg=NONE      cterm=NONE
-hi rubyEscape                  ctermfg=darkcyan       ctermbg=NONE      cterm=NONE
-hi rubyInterpolationDelimiter  ctermfg=darkblue       ctermbg=NONE      cterm=NONE
-hi rubyControl                 ctermfg=darkblue       ctermbg=NONE      cterm=NONE  "and break, etc
-"hi rubyGlobalVariable         ctermfg=darkblue       ctermbg=NONE      cterm=NONE  "yield
-hi rubyStringDelimiter         ctermfg=darkgreen      ctermbg=NONE      cterm=NONE
-"rubyInclude
-"rubySharpBang
-"rubyAccess
-"rubyPredefinedVariable
-"rubyBoolean
-"rubyClassVariable
-"rubyBeginEnd
-"rubyRepeatModifier
-"hi link rubyArrayDelimiter    Special  " [ , , ]
-"rubyCurlyBlock  { , , }
-
-hi link rubyClass             Keyword 
-hi link rubyModule            Keyword 
-hi link rubyKeyword           Keyword 
-hi link rubyOperator          Operator
-hi link rubyIdentifier        Identifier
-hi link rubyInstanceVariable  Identifier
-hi link rubyGlobalVariable    Identifier
-hi link rubyClassVariable     Identifier
-hi link rubyConstant          Type  
-
+"" Special for Ruby
+"hi rubyRegexp                  ctermfg=brown          ctermbg=NONE      cterm=NONE
+"hi rubyRegexpDelimiter         ctermfg=brown          ctermbg=NONE      cterm=NONE
+"hi rubyEscape                  ctermfg=darkcyan       ctermbg=NONE      cterm=NONE
+"hi rubyInterpolationDelimiter  ctermfg=darkblue       ctermbg=NONE      cterm=NONE
+"hi rubyControl                 ctermfg=darkblue       ctermbg=NONE      cterm=NONE  "and break, etc
+""hi rubyGlobalVariable         ctermfg=darkblue       ctermbg=NONE      cterm=NONE  "yield
+"hi rubyStringDelimiter         ctermfg=darkgreen      ctermbg=NONE      cterm=NONE
+""rubyInclude
+""rubySharpBang
+""rubyAccess
+""rubyPredefinedVariable
+""rubyBoolean
+""rubyClassVariable
+""rubyBeginEnd
+""rubyRepeatModifier
+""hi link rubyArrayDelimiter    Special  " [ , , ]
+""rubyCurlyBlock  { , , }
+"
+"hi link rubyClass             Keyword 
+"hi link rubyModule            Keyword 
+"hi link rubyKeyword           Keyword 
+"hi link rubyOperator          Operator
+"hi link rubyIdentifier        Identifier
+"hi link rubyInstanceVariable  Identifier
+"hi link rubyGlobalVariable    Identifier
+"hi link rubyClassVariable     Identifier
+"hi link rubyConstant          Type  
+"
 
 " Special for Java
 " hi link javaClassDecl    Type

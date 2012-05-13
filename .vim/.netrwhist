@@ -1,3 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/Users/issei/development/bulldozer/api/rails/bulldozer/app/controllers/api'
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/issei/development/bulldozer/api/rails/bulldozer/app'
+let g:netrw_dirhist_2='/Users/issei/development/bulldozer/api/rails/bulldozer/app/controllers'
+let g:netrw_dirhist_3='/Users/issei/development/bulldozer/api/rails/bulldozer/app/models'
+let g:netrw_dirhist_4='/Users/issei/development/bulldozer/api/rails/bulldozer/app/controllers'
+let g:netrw_dirhist_5='/Users/issei/development/bulldozer/api/rails/bulldozer/app'
+let g:netrw_dirhist_6='/Users/issei/development/bulldozer/api/rails/bulldozer/test/fixtures'
+let g:netrw_dirhist_7='/Users/issei/.vim'
+let g:netrw_dirhist_8='/Users/issei/development/kuzilla/src/client/android/src'
